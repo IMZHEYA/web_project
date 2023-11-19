@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频</title>
+      <!-- 引入外部样式表和图标 -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="shortcut icon" href="../图标.ico">
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <style>
+           /* 内部样式表 */
+        /* 背景设为白色 */
+        body {
+            background-color: white;
+        }
+      /* 为整个盒子设置为弹性布局 */
+        #shipin {
+            display: flex;
+            /* 垂直显示 */
+            flex-direction: column;
+        }
+     /* 第一行动漫详情部分 */
+        #hang1 {
+            flex: 1;
+            border-top: 1px solid;
+            border-left: 1px solid;
+            border-right: 1px solid;
+            border-bottom: 3px solid blue;
+            margin: auto;
+            width: 1400px;
+        }
+        #hang1 p {
+            color: blue;
+            margin-left: 74px;
+        }
+        #hang1 p {
+            line-height: 50px;
+        }
+        /* 第二行视频与介绍 */
+        #hang2 {
+            width: 1400px;
+            flex: 6;
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            border: 1px solid;
+
+        }
+        
+        #hang21 {
+            flex: 1.5;
+        }
+
+        #hang21 video {
+            margin: 10px 10px 10px 30px;
+            width: 100%;
+        }
+
+        #hang22 {
+            flex: 1;
+        }
+
+        #hang22 {
+            margin-left: 50px;
+        }
+        #wenzi p {
+            line-height: 35px;
+        }
+        #wenzi h2 {
+            margin-top: 10px;
+        }
+        #juqing {
+            width: 81px;
+            height: 40px;
+            background-color: blue;
+        }
+
+        #juqing p {
+            text-align: center;
+            line-height: 40px;
+            color: white;
+        }
+        p {
+            color: black;
+        }
+        /* 第三行在线观看 */
+        #hang3 {
+            flex: 2;
+            margin-left: 59px;
+            margin-right: 59px;
+        }
+        #hang31 h2,
+        #hang4 h2 {
+            font-size: medium;
+            line-height: 50px;
+            text-decoration-line: overline;
+            text-decoration-color: blue;
+        }
+
+        #hang32 ul li {
+            float: left;
+        }
+
+        #hang32 ul li a {
+            color: skyblue;
+            margin: 30px;
+        }
+
+        #hang32 ul li a:hover {
+            color: blue;
+        }
+      /* 第四行为你推荐 */
+        #hang4 {
+            flex: 6;
+            margin-left: 59px;
+            margin-right: 59px;
+            display: flex;
+            flex-direction: column;
+        }
+        #hang421,
+        #hang422,
+        #hang423,
+        #hang424,
+        #hang425 {
+            width: 17%;
+            height: 400px;
+            float: left;
+            overflow: hidden;
+            margin: 14px;
+        }
+
+        #hang42 img {
+            width: 100%;
+            height: 400px;
+            transition: 0.5s;
+        }
+
+        #hang42 img:hover {
+            transform: scale(1.1);
+        }
+
+        #hang42 {
+            overflow: hidden;
+        }
+     #dog
+    { width: 100px; height: 100px; position: absolute; }
+     
+    </style>
+</head>
+<img src="../images/小羊.gif" alt="" id="dog">
+<body>
+    <!-- 头部 -->
+    <div class="header">
+          <div id="banner">
+            <ul id="imgList">
+                <li><img src="../images/pink.png" alt=""></li>
+                <li><img src="../images/伍六七首页.jpg" alt=""></li>
+                <li><img src="../images/全员大图.jpg" alt=""></li>
+                <li><img src="../images/首页.jpg" alt=""></li>
+                <li><img src="../images/pink.png" alt=""></li>
+            </ul> 
+            <ul id="icolist">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+            <!-- 左右箭头 -->
+            <div class="prev">&lt;</div>
+            <div class="next">&gt;</div>
+
+        </div>
+    </div>
+    <!-- 导航栏 -->
+    <div class="nav">
+        <a href="./index.html">首页</a>
+        <a href="./haibao.html">海报</a>
+        <a href="./juese.html">角色</a>
+        <a href="./juzhao.html">剧照</a>
+        <a href="./shipin.html">视频</a>
+        <a href="./denglu.html">登录</a>
+    </div>
+    <!-- 视频主体部分 -->
+    <div id="shipin">
+        <!-- 左上角的动漫详情 -->
+        <div id="hang1">
+            <p>动漫详情</p>
+        </div>
+        <!-- 中间部分 -->
+        <div id="hang2">
+            <!-- 中间左边的视频 -->
+            <div id="hang21"><video src="../video/shipin1.mp4" controls></video></div>
+            <!-- 中间右边的介绍 -->
+            <div id="hang22">
+                <div id="wenzi">
+                    <h2>暗影宿命之不死黑鸟</h2>
+                    <p>连载至<em>10集</em><br>地区：<strong>中国</strong> 年代：<strong>2023</strong><br>类型:<strong>奇幻 热血 战斗
+                            冒险</strong>
+                    </p>
+                </div>
+                <div id="juqing">
+                    <p>剧情</p>
+                </div>
+            </div>
+        </div>
+        <!-- 下部的在线观看部分 -->
+        <div id="hang3">
+            <div id="hang31">
+                <h2>在线观看</h2>
+                <div id="hang32">
+                    <ul>
+                        <li><a href="https://www.bilibili.com/bangumi/play/ep720232/" target="_blank">第10集</a></li>
+                        <li><a href="https://www.bilibili.com/bangumi/play/ep720231/" target="_blank">第9集</a></li>
+                        <li><a href="https://www.bilibili.com/bangumi/play/ep720230/" target="_blank">第8集</a></li>
+                        <li><a href="https://www.bilibili.com/bangumi/play/ep720229/" target="_blank">第7集</a></li>
+                        <li><a href="https://www.bilibili.com/bangumi/play/ep720228/" target="_blank">第6集</a></li>
+                        <li><a href="https://www.bilibili.com/bangumi/play/ep720227/" target="_blank">第5集</a></li>
+                        <li><a href="https://www.bilibili.com/bangumi/play/ep720226/" target="_blank">第4集</a></li>
+                        <li><a href="https://www.bilibili.com/bangumi/play/ep720225/" target="_blank">第3集</a></li>
+                        <li><a href="https://www.bilibili.com/bangumi/play/ep720224/" target="_blank">第2集</a></li>
+                        <li><a href="https://www.bilibili.com/bangumi/play/ep720223/" target="_blank">第1集</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- 最后的为你推荐部分 -->
+        <div id="hang4">
+            <div id="hang41">
+                <h2>为你推荐</h2>
+            </div>
+            <div id="hang42">
+                <div id="hang421"><a href="https://www.bilibili.com/bangumi/play/ss39433" target="_blank"><img
+                            src="../images/鬼灭之刃.webp" alt=""></a></div>
+                <div id="hang422"> <a href="https://www.bilibili.com/bangumi/play/ep331423" target="_blank"><img
+                            src="../images/雾山五行.webp" alt=""></a></div>
+                <div id="hang423"><a href="https://www.bilibili.com/video/BV11S4y117xD/" target="_blank"> <img
+                            src="../images/魔道祖师.webp" alt=""></a></div>
+                <div id="hang424"><a href="https://www.bilibili.com/bangumi/play/ss32321?spm_id_from=333.337.0.0"
+                        target="_blank">
+                        <img src="../images/大理寺日志.webp" alt=""></a></div>
+                <div id="hang425"><a href="https://www.bilibili.com/bangumi/play/ss32321?spm_id_from=333.337.0.0"
+                        target="_blank">
+                        <div><a href="https://search.bilibili.com/all?keyword=%E5%9B%BD%E7%8E%8B%E6%8E%92%E5%90%8D&from_source=webtop_search&spm_id_from=666.25&search_source=2"
+                                target="_blank"><img src="../images/国王排名.webp" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var eprev = document.querySelector('.prev');
+var enext = document.querySelector('.next');
+var esico = document.getElementById('icolist').getElementsByTagName('li');
+var eicolist = document.querySelector('#icolist');//获取圆点列表元素
+var eimglist = document.querySelector('#imgList');//获取图片列表
+var left = 0;//移动变量
+var timer;//计时器
+run();
+//图片轮播
+function run() {
+    if (left <= -5688) {
+        left = 0;
+    }
+    var m = Math.floor(-left / 1422);
+    imgList.style.marginLeft = left + 'px';
+    // var n = (left % 1422 == 0) ? n =1200 : n = 10;
+    left -= 10;
+    timer = setTimeout(run, 50);
+    //圆点颜色变化
+    icochange(m);
+}
+//图片定位函数
+function imgchange(n) {
+    let lt = - (n * 1422);
+    imgList.style.marginLeft = lt + 'px';
+    left = lt;
+}
+//鼠标点击上一张事件
+eprev.onclick = function () {
+    let prevgo = Math.floor(-left / 1422) - 1;
+    if (prevgo == -1) {
+        prevgo = 3;
+    }
+    imgchange(prevgo);
+}
+//鼠标点击下一张事件
+enext.onclick = function () {
+    let nextgo = Math.floor(-left / 1422) + 1;
+    if (nextgo == 4) {
+        nextgo = 0;
+    }
+    imgchange(nextgo);
+}
+//  圆点跟随变化函数
+function icochange(m) {
+    for (let index = 0; index < esico.length; index++) {
+        esico[index].style.backgroundColor = '';
+    }
+    if (m < esico.length) {
+        esico[m].style.backgroundColor = 'red';
+    }
+}
+eicolist.onclick = function () {
+    var tg = event.target;
+    let ico = tg.innerHTML - 1;
+    if (!isNaN(ico)) {
+        imgchange(ico);
+        icochange(ico);
+    }
+
+}
+/* 鼠标在图片列表上时轮播停止，移开后又启动 */
+eimglist.onmouseover = function () {
+    clearTimeout(timer);
+}
+eimglist.onmouseout = function () {
+    run();
+}
+//小羊跑动
+   var img=document.getElementById('dog');
+        document.addEventListener("mousemove",function(e){
+            var x=e.pageX
+            var y=e.pageY
+            img.style.top=y-100+"px"
+            img.style.left=x-100+"px"
+        })
+        </script>
+</body>
+
+</html>

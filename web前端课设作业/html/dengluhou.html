@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎回来！</title>
+      <!-- 引入外部样式表和图标 -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="shortcut icon" href="../图标.ico">
+   <style>
+       /* 内部样式表 */
+    .welcome{
+        font-size: larger;
+        color: white;
+       text-align: center;
+       margin-top: 50px;
+       font-family: "Adele";
+    }
+   </style>
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="header">
+         <div id="banner">
+            <ul id="imgList">
+                <li><img src="../images/pink.png" alt=""></li>
+                <li><img src="../images/伍六七首页.jpg" alt=""></li>
+                <li><img src="../images/全员大图.jpg" alt=""></li>
+                <li><img src="../images/首页.jpg" alt=""></li>
+                <li><img src="../images/pink.png" alt=""></li>
+            </ul> 
+            <ul id="icolist">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+            <!-- 左右箭头 -->
+            <div class="prev">&lt;</div>
+            <div class="next">&gt;</div>
+
+        </div>
+    </div>
+    <!-- 导航栏 -->
+    <div class="nav">
+        <a href="./index.html">首页</a>
+        <a href="./haibao.html">海报</a>
+        <a href="./juese.html">角色</a>
+        <a href="./juzhao.html">剧照</a>
+        <a href="./shipin.html">视频</a>
+        <a href="./denglu.html">登录</a>
+    </div>
+    <!-- 正文 -->
+    <div class="welcome">
+        <h1>   WELCOM HOME!</h1>
+    </div>
+    <script>
+        var eprev = document.querySelector('.prev');
+var enext = document.querySelector('.next');
+var esico = document.getElementById('icolist').getElementsByTagName('li');
+var eicolist = document.querySelector('#icolist');//获取圆点列表元素
+var eimglist = document.querySelector('#imgList');//获取图片列表
+var left = 0;//移动变量
+var timer;//计时器
+run();
+//图片轮播
+function run() {
+    if (left <= -5688) {
+        left = 0;
+    }
+    var m = Math.floor(-left / 1422);
+    imgList.style.marginLeft = left + 'px';
+    // var n = (left % 1422 == 0) ? n =1200 : n = 10;
+    left -= 10;
+    timer = setTimeout(run, 50);
+    //圆点颜色变化
+    icochange(m);
+}
+//图片定位函数
+function imgchange(n) {
+    let lt = - (n * 1422);
+    imgList.style.marginLeft = lt + 'px';
+    left = lt;
+}
+//鼠标点击上一张事件
+eprev.onclick = function () {
+    let prevgo = Math.floor(-left / 1422) - 1;
+    if (prevgo == -1) {
+        prevgo = 3;
+    }
+    imgchange(prevgo);
+}
+//鼠标点击下一张事件
+enext.onclick = function () {
+    let nextgo = Math.floor(-left / 1422) + 1;
+    if (nextgo == 4) {
+        nextgo = 0;
+    }
+    imgchange(nextgo);
+}
+//  圆点跟随变化函数
+function icochange(m) {
+    for (let index = 0; index < esico.length; index++) {
+        esico[index].style.backgroundColor = '';
+    }
+    if (m < esico.length) {
+        esico[m].style.backgroundColor = 'red';
+    }
+}
+eicolist.onclick = function () {
+    var tg = event.target;
+    let ico = tg.innerHTML - 1;
+    if (!isNaN(ico)) {
+        imgchange(ico);
+        icochange(ico);
+    }
+
+}
+/* 鼠标在图片列表上时轮播停止，移开后又启动 */
+eimglist.onmouseover = function () {
+    clearTimeout(timer);
+}
+eimglist.onmouseout = function () {
+    run();
+}
+    </script>
+</body>
+</html>

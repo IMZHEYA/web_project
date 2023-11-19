@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>角色</title>
+        <!-- 引入外部样式表和图标 -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="shortcut icon" href="../图标.ico">
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+	<style>
+           /* 内部样式表 */
+	.juese{
+	font-family:"宋体"}
+       .juese {
+            font-family: "宋体"
+        }
+          .image-zoom{
+            /* background-color: black; */
+            background-size: 100% 600px;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 600px;
+            border-radius: 15px;
+            border-color: white;
+            margin: 10px;
+            max-width: 500px;
+            max-height: 500px;
+            
+        }
+        .image-zoom[zoomed]{
+            background-size: 900px 1350px;
+            background-position: calc(var(--x) * 100%)  calc(var(--y) * 100%);
+            /* 计算背景图片在水平和垂直方向的相对位置 */
+        }
+        .image-zoom:hover {
+         cursor:zoom-in;
+     }
+
+        </style>
+      
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header">
+         <div id="banner">
+            <ul id="imgList">
+                <li><img src="../images/pink.png" alt=""></li>
+                <li><img src="../images/伍六七首页.jpg" alt=""></li>
+                <li><img src="../images/全员大图.jpg" alt=""></li>
+                <li><img src="../images/首页.jpg" alt=""></li>
+                <li><img src="../images/pink.png" alt=""></li>
+            </ul> 
+            <ul id="icolist">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+            <!-- 左右箭头 -->
+            <div class="prev">&lt;</div>
+            <div class="next">&gt;</div>
+
+        </div>
+    </div>
+    <!-- 导航栏 -->
+    <div class="nav">
+        <a href="./index.html">首页</a>
+        <a href="./haibao.html">海报</a>
+        <a href="./juese.html">角色</a>
+        <a href="./juzhao.html">剧照</a>
+        <a href="./shipin.html">视频</a>
+        <a href="./denglu.html">登录</a>
+    </div>
+    <!-- 角色及其介绍 -->
+    <div class="juese">
+        <div class="row">
+            <div class="lineone">
+                <div class="col">
+                       <div class="image-zoom" id="img11">
+                            <!-- <img src="../images/伍六七.png" alt="图片1"> -->
+                       </div>
+                    <p>柒，原名未知。15岁成为玄武国七大暗影刺客之一，原玄武国首席暗影刺客，现已失忆，穿着一袭紫衣，发型桀骜，面容冷峻，赤色瞳孔；此前为了保护一名白衣女子而杀掉玄武国的神兽，所以成为刺客通缉人物，而现在逐渐恢复记忆。
+                    </p>
+                </div>
+                <div class="col">
+                       <div class="image-zoom" id="img22">
+                            <!-- <img src="../images/赤牙.png" alt=""> -->
+                       </div>
+                    
+                    <p>赤牙，原名阿权，玄武国七大暗影刺客之一，原天莲派弟子，因为修炼血魔大法被逐出门派。可以通过吸取他人的血变强，吸的人越厉害越强
+                        在和伍六七的对决中落败，后被青凤重伤，后被江惠莲带回天莲派禁地。
+                        第九集与江惠莲达成交易，回到小鸡岛与同为暗影刺客的白狐交手 </p>
+                </div>
+                <div class="col">
+                     <div class="image-zoom" id="img33"></div>
+                    <p>青凤，原名不详，梅花十三的师傅，21岁成为玄武国七大暗影刺客之一的双刀流刺客，使用剑技时迸发的能量犹如青色的凤凰。
+                        原本是青云国王子，十年前由于玄武国为夺取青云国国宝，现任“首领”刺杀了国王一家，年幼的青凤逃过一劫后，为了给双亲以及所有青云国子民报仇，加入刺客组织，借机刺杀首领 。
+                        在与首领的对决中，成功击伤首领，但由于和梅花十三的“感情”，最终放弃击杀首领，去救十三，并和曼珠沙华以及石门交手，并成功重创二人，但自己也受伤不轻
+                    </p>
+                </div>
+            </div>
+            <div class="linetwo">
+                <div class="col">
+                    <div class="image-zoom" id="img44"></div>
+                    <p>玄武国七大暗影刺客之一同时也是七大暗影刺客中唯一的女性。有病娇的属性，对于得不到的东西就会毁掉。告诉柒自己因为嫉妒杀了柒两年前保护的白衣女，在梅花十三和黑鸟搏斗时候坐着观战，在黑鸟落败后，帮忙恢复了黑鸟的容貌，表示谢幕也要漂漂亮亮，决定亲手解决伍六七在青凤叛变后，与石门一起与前来营救梅花十三的清凤交手，成功刺伤清凤，但同时也被青凤重伤,生死不明
+                    </p>
+                </div>
+                <div class="col">
+                    <div class="image-zoom" id="img55"></div>
+                    <p>曾经的飞鸟门掌门，之前飞鸟门分两派——黑鸟系和白鸟系;很久以前两派打过一架，最后白鸟系掌门白鸟胜利了但是也元气大伤，黑鸟系掌门黑鸟输了战斗，后成为了玄武国暗影刺客之一。黑鸟在和梅花十三的战斗中被魔刀千刃划伤，在与伍六七战斗中因疑似被魔刀千刃吸收生命力以及功力而落败,生死不明
+                        (因为黑鸟门秘籍容易走火入魔,所以黑鸟实际上骨瘦如柴)</p>
+                </div>
+                <div class="col">
+                   <div class="image-zoom" id="img66"></div>
+                    <p>冷酷、果断，故事女主角，玄武国女刺客，刺客排行榜第37位，擅长使用双刀流和梅花镖，发辫上的短刃可用于攻击。目标是击败所有男人，最终目标是击败自己的父亲。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 结尾部分 -->
+    <div class="footer">
+        <nav>
+            <ul>
+                <li><a href="#">帮助中心 |</a></li>
+                <li><a href="#">&nbsp;联系我们 |</a></li>
+                <li><a href="#">&nbsp;关于我们 |</a></li>
+                <li><a href="#">&nbsp;隐私声明 |</a></li>
+                <li><a href="#">&nbsp;意见反馈</a></li>
+            </ul>
+        </nav>
+
+        <address>
+            <a href="http://www.ujn.cn">Copyright &copy;济南大学web前端团队</a>
+        </address>
+    </div>
+
+    <script>
+ var eprev = document.querySelector('.prev');
+var enext = document.querySelector('.next');
+var esico = document.getElementById('icolist').getElementsByTagName('li');
+var eicolist = document.querySelector('#icolist');//获取圆点列表元素
+var eimglist = document.querySelector('#imgList');//获取图片列表
+var left = 0;//移动变量
+var timer;//计时器
+run();
+//图片轮播
+function run() {
+    if (left <= -5688) {
+        left = 0;
+    }
+    var m = Math.floor(-left / 1422);
+    imgList.style.marginLeft = left + 'px';
+    // var n = (left % 1422 == 0) ? n =1200 : n = 10;
+    left -= 10;
+    timer = setTimeout(run, 50);
+    //圆点颜色变化
+    icochange(m);
+}
+//图片定位函数
+function imgchange(n) {
+    let lt = - (n * 1422);
+    imgList.style.marginLeft = lt + 'px';
+    left = lt;
+}
+//鼠标点击上一张事件
+eprev.onclick = function () {
+    let prevgo = Math.floor(-left / 1422) - 1;
+    if (prevgo == -1) {
+        prevgo = 3;
+    }
+    imgchange(prevgo);
+}
+//鼠标点击下一张事件
+enext.onclick = function () {
+    let nextgo = Math.floor(-left / 1422) + 1;
+    if (nextgo == 4) {
+        nextgo = 0;
+    }
+    imgchange(nextgo);
+}
+//  圆点跟随变化函数
+function icochange(m) {
+    for (let index = 0; index < esico.length; index++) {
+        esico[index].style.backgroundColor = '';
+    }
+    if (m < esico.length) {
+        esico[m].style.backgroundColor = 'red';
+    }
+}
+eicolist.onclick = function () {
+    var tg = event.target;
+    let ico = tg.innerHTML - 1;
+    if (!isNaN(ico)) {
+        imgchange(ico);
+        icochange(ico);
+    }
+
+}
+/* 鼠标在图片列表上时轮播停止，移开后又启动 */
+eimglist.onmouseover = function () {
+    clearTimeout(timer);
+}
+eimglist.onmouseout = function () {
+    run();
+}
+    </script>
+
+
+
+
+
+<!-- 鼠标移到图片上放大镜实现 -->
+<script>
+
+//g根据名称获取不同的背景图
+
+// 选择所有带有类 'image-zoom' 的元素
+var imageZoomElements = document.querySelectorAll('[id^="img"]');
+
+// 获取图片的名称，根据需要修改
+function getImageName(index) {
+    var imageNames = ['伍六七八', '赤牙', '青风', '曼珠沙华', '黑鸟', '梅花十三_r'];
+    return imageNames[index - 1];
+}
+
+// 为每个 'image-zoom' 元素设置不同的背景图
+imageZoomElements.forEach(function (element, index) {
+    element.style.backgroundImage = 'url(\'../images/' + getImageName(index) + '.png\')';
+    // 这里的 getImageName 函数应该返回每个图片的名称，你可以根据需要修改它的实现
+     //实现放大镜效果
+    //1.获取到鼠标放上去 鼠标移动 鼠标移出的事件
+    element.addEventListener('mouseenter', enterHandler);
+    element.addEventListener('mousemove', moveHandler);
+    element.addEventListener('mouseleave', leaveHandler);
+});
+
+
+//2，鼠标放上设置属性 改变css 实现放大
+function enterHandler(e){
+    e.target.setAttribute('zoomed',1);
+}
+
+//3，鼠标移动  改变css背景图片位置？？
+  function moveHandler(e){
+    // 获取图片元素的位置信息
+    let rect = e.target.getBoundingClientRect();
+     // 计算鼠标在图片内的相对坐标（0到1之间）
+     let x = e.offsetX / rect.width;
+     let y = e.offsetY /rect.height;
+    // 设置 CSS 变量，用于调整背景图片位置
+     e.target.style.setProperty('--x',x);
+     e.target.style.setProperty('--y',y);
+}
+//4，鼠标移走移出属性
+function leaveHandler(e){
+ e.target.removeAttribute('zoomed');
+}
+
+</script>
+
+</body>
+
+</html>

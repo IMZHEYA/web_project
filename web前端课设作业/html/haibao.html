@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>海报</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="shortcut icon" href="../图标.ico">
+    <style>
+        .body{
+            font-family: "宋体";
+        }
+        .footer {
+            clear: both;
+            /*清楚浮动 */
+        }
+
+        .haibao1 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .haibao11 {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            visibility: hidden;
+        }
+
+        .haibao1 img {
+            flex: 1;
+            margin: 10px;
+            width: 315px;
+            height: 500px;
+            border-radius: 10px;
+        }
+
+        .haibao11 .h1 {
+            flex: 1;
+            background-color: greenyellow;
+            text-align: center;
+            line-height: 100px;
+            font-size: large;
+        }
+
+        .haibao11 .p1 {
+            flex: 4;
+            background-color: #66cc00;
+        }
+
+        .haibao11 .p1 p {
+            margin-left: 0;
+            line-height: 40px;
+            padding-right: 50px;
+            font-size: large;
+            margin-left: 30px;
+        }
+
+        .haibao2 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .haibao22 {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            visibility: hidden;
+        }
+
+        .haibao2 img {
+            flex: 1;
+            margin: 10px;
+            width: 315px;
+            height: 500px;
+            border-radius: 10px;
+        }
+
+        .haibao22 .h1 {
+            flex: 1;
+            background-color: skyblue;
+            text-align: center;
+            line-height: 100px;
+            font-size: large;
+        }
+
+        .haibao22 .p1 {
+            flex: 4;
+            background-color: #66cc00;
+        }
+
+        .haibao22 .p1 p {
+            margin-left: 0;
+            line-height: 40px;
+            padding-right: 50px;
+            font-size: large;
+            margin-left: 30px;
+        }
+
+        .haibao3 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .haibao33 {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            visibility: hidden;
+        }
+
+        .haibao3 img {
+            flex: 1;
+            margin: 10px;
+            width: 315px;
+            height: 500px;
+            border-radius: 10px;
+        }
+
+        .haibao33 .h1 {
+            flex: 1;
+            background-color: yellow;
+            text-align: center;
+            line-height: 100px;
+            font-size: large;
+        }
+
+        .haibao33 .p1 {
+            flex: 4;
+            background-color: #66cc00;
+        }
+
+        .haibao33 .p1 p {
+            margin-left: 0;
+            line-height: 40px;
+            padding-right: 50px;
+            font-size: large;
+            margin-left: 30px;
+        }
+
+        .haibao4 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .haibao44 {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            visibility: hidden;
+        }
+
+        .haibao4 img {
+            flex: 1;
+            margin: 10px;
+            width: 315px;
+            height: 500px;
+            border-radius: 10px;
+        }
+
+        .haibao44 .h1 {
+            flex: 1;
+            background-color: #ff99ff;
+            text-align: center;
+            line-height: 100px;
+            font-size: large;
+        }
+
+        .haibao44 .p1 {
+            flex: 4;
+            background-color: #66cc00;
+        }
+
+        .haibao44 .p1 p {
+            margin-left: 0;
+            line-height: 40px;
+            padding-right: 50px;
+            font-size: large;
+            margin-left: 30px;
+        }
+             /* #dog
+    { width: 100px; height: 100px; position: absolute; } */
+    </style>
+</head>
+<!-- <img src="../images/小羊.gif" alt="" id="dog"> -->
+<body>
+    <div class="header">
+           <div id="banner">
+            <ul id="imgList">
+                <li><img src="../images/pink.png" alt=""></li>
+                <li><img src="../images/伍六七首页.jpg" alt=""></li>
+                <li><img src="../images/全员大图.jpg" alt=""></li>
+                <li><img src="../images/首页.jpg" alt=""></li>
+                <li><img src="../images/pink.png" alt=""></li>
+            </ul> 
+            <ul id="icolist">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+            <!-- 左右箭头 -->
+            <div class="prev">&lt;</div>
+            <div class="next">&gt;</div>
+
+        </div>
+    </div>
+    <div class="nav">
+        <a href="./index.html">首页</a>
+        <a href="./haibao.html">海报</a>
+        <a href="./juese.html">角色</a>
+        <a href="./juzhao.html">剧照</a>
+        <a href="./shipin.html">视频</a>
+        <a href="./denglu.html">登录</a>
+    </div>
+    <div class="haibao">
+        <div class="haibao1">
+            <img src="../images/第一季海报.jpg" id="img1">
+            <div class="haibao11">
+                <div class="h1">
+                    <h1>《刺客伍六七》</h1>
+                </div>
+                <div class="p1">
+                    <p>
+                        《伍六七》是由啊哈娱乐（上海）有限公司与广州小疯文化传播有限公司联合出品的原创网络动画，于2018年4月25日起每周三于网络发布。全片以主人公伍六七寻找失去的记忆为故事主线。配合角色与角色之间的爱恨情仇组成的支线贯穿始终。通过讲述主人公在帮助别人和寻找自我的过程中，认识不同的人，与不同角色之间发生的有趣的事，最终用爱化解仇恨与偏见的故事，想带给观众欢乐的同时表达对生活的热爱，爱与包容可以化解一切,《伍六七之最强发型师》是由啊哈娱乐（上海）有限公司与广州小疯文化传播有限公司联合出品的原创网络动画，也是网络动画《刺客伍六七》的正统续作
+                        。该片由邹沙沙担任出品人、制片人，何小疯担任导演和编剧。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="haibao2">
+            <img src="../images/第二季海报.jpg" alt="" id="img2">
+            <div class="haibao22">
+                <div class="h1">
+                    <h1>《伍六七之最强发型师》</h1>
+                </div>
+                <div class="p1">
+                    <p>《伍六七之最强发型师》获得第17届中国动漫“金龙奖”最佳系列动画奖银奖、最佳动画编剧奖。2020年12月18日，《伍六七之最强发型师》获得2020年度爱奇艺“金花瓣奖”最具潜力动画奖 </p>
+                </div>
+            </div>
+        </div>
+        <div class="haibao3">
+            <img src="../images/第三季海报.jpg" alt="" id="img3">
+            <div class="haibao33">
+                <div class="h1">
+                    <h1>《伍六七之玄武国篇》</h1>
+                </div>
+                <div class="p1">
+                    <p>《伍六七之玄武国篇》是由啊哈娱乐（上海）有限公司与广州小疯文化传播有限公司联合出品，广州小疯文化传播有限公司负责制作的原创网络动画片，也是原创动画《刺客伍六七》系列的第三季，该片由邹沙沙担任出品人、制片人，何小疯担任导演和编剧
+                        ，于2021年1月27日起在bilibili、腾讯视频、优酷网每周三12:00发布，首播2集，全10集 [1-3]，于2021年5月5日完结。</p>
+                </div>
+            </div>
+        </div>
+        <div class="haibao4">
+            <img src="../images/第四季海报.jpg" alt="" id="img4">
+            <div class="haibao44">
+                <div class="h1">
+                    <h1>《伍六七之暗影宿命》</h1>
+                </div>
+                <div class="p1">
+                    <p>《伍六七之暗影宿命》是啊哈时光和与小疯映画联合出品的原创网络动画片，也是《伍六七》动画片系列的第4季，该片由邹沙沙担任出品人、制片人，何小疯担任导演和编剧，于2023年1月18日至3月15日在bilibili每周三12:00发布，首播2集，全10集
+                        ，于2021年1月27日起在bilibili、腾讯视频、优酷网每周三12:00发布，首播2集，全10集 [1-3]，于2021年5月5日完结。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <nav>
+            <ul>
+                <li><a href="#">帮助中心 |</a></li>
+                <li><a href="#">&nbsp;联系我们 |</a></li>
+                <li><a href="#">&nbsp;关于我们 |</a></li>
+                <li><a href="#">&nbsp;隐私声明 |</a></li>
+                <li><a href="#">&nbsp;意见反馈</a></li>
+            </ul>
+        </nav>
+
+        <address>
+            <a href="http://www.ujn.cn">Copyright &copy;济南大学web前端团队</a>
+        </address>
+    </div>
+      <script>
+        //控制海报显示与隐藏
+           var img1 = document.getElementById('img1');
+           var img2 = document.getElementById('img2');
+           var img3 = document.getElementById('img3');
+           var img4 = document.getElementById('img4');
+           img1.addEventListener('click', function () {
+            if(document.querySelector('.haibao11').style.visibility === 'hidden')
+            document.querySelector('.haibao11').style.visibility = 'visible';
+            else
+            document.querySelector('.haibao11').style.visibility = 'hidden'
+         });
+             img2.addEventListener('click', function () {
+            if(document.querySelector('.haibao22').style.visibility === 'hidden')
+            document.querySelector('.haibao22').style.visibility = 'visible';
+            else
+            document.querySelector('.haibao22').style.visibility = 'hidden'
+         });
+            img3.addEventListener('click', function () {
+            if(document.querySelector('.haibao33').style.visibility === 'hidden')
+            document.querySelector('.haibao33').style.visibility = 'visible';
+            else
+            document.querySelector('.haibao33').style.visibility = 'hidden'
+         });
+                 img4.addEventListener('click', function () {
+            if(document.querySelector('.haibao44').style.visibility === 'hidden')
+            document.querySelector('.haibao44').style.visibility = 'visible';
+            else
+            document.querySelector('.haibao44').style.visibility = 'hidden'
+         });
+//轮播图
+var eprev = document.querySelector('.prev');
+var enext = document.querySelector('.next');
+var esico = document.getElementById('icolist').getElementsByTagName('li');
+var eicolist = document.querySelector('#icolist');//获取圆点列表元素
+var eimglist = document.querySelector('#imgList');//获取图片列表
+var left = 0;//移动变量
+var timer;//计时器
+run();
+//图片轮播
+function run() {
+    if (left <= -5688) {
+        left = 0;
+    }
+    var m = Math.floor(-left / 1422);
+    imgList.style.marginLeft = left + 'px';
+    // var n = (left % 1422 == 0) ? n =1200 : n = 10;
+    left -= 10;
+    timer = setTimeout(run, 50);
+    //圆点颜色变化
+    icochange(m);
+}
+//图片定位函数
+function imgchange(n) {
+    let lt = - (n * 1422);
+    imgList.style.marginLeft = lt + 'px';
+    left = lt;
+}
+//鼠标点击上一张事件
+eprev.onclick = function () {
+    let prevgo = Math.floor(-left / 1422) - 1;
+    if (prevgo == -1) {
+        prevgo = 3;
+    }
+    imgchange(prevgo);
+}
+//鼠标点击下一张事件
+enext.onclick = function () {
+    let nextgo = Math.floor(-left / 1422) + 1;
+    if (nextgo == 4) {
+        nextgo = 0;
+    }
+    imgchange(nextgo);
+}
+//  圆点跟随变化函数
+function icochange(m) {
+    for (let index = 0; index < esico.length; index++) {
+        esico[index].style.backgroundColor = '';
+    }
+    if (m < esico.length) {
+        esico[m].style.backgroundColor = 'red';
+    }
+}
+eicolist.onclick = function () {
+    var tg = event.target;
+    let ico = tg.innerHTML - 1;
+    if (!isNaN(ico)) {
+        imgchange(ico);
+        icochange(ico);
+    }
+
+}
+/* 鼠标在图片列表上时轮播停止，移开后又启动 */
+eimglist.onmouseover = function () {
+    clearTimeout(timer);
+}
+eimglist.onmouseout = function () {
+    run();
+}
+
+    //小羊跑动
+//    var img=document.getElementById('dog');
+//         document.addEventListener("mousemove",function(e){
+//             var x=e.pageX
+//             var y=e.pageY
+//             img.style.top=y-100+"px"
+//             img.style.left=x-100+"px"
+//         })
+      </script>
+</body>
+
+
+
+</html>

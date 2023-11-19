@@ -1,0 +1,72 @@
+/* 样式初始化 */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* 所有界面背景色和宽度设置 */
+body {
+    background-color: rgb(100, 41, 143);
+    width: 100%;
+}
+
+/* 首页页面部分的外部样式表 */
+.container img {
+    width: 100%;
+    height: 850px;
+}
+
+/* .juese img {
+    width: 100%;
+    height: 600px;
+} */
+
+.container h1 {
+    text-align: center;
+    color: white;
+    font-family: "宋体";
+}
+
+.container p {
+    color: white;
+    padding: 10px;
+    font-size: larger;
+    font-family: "宋体";
+}
+
+.jianjie {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* 角色页面部分的外部样式表 */
+.juese {
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+.row .col {
+    width: 30%;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* .row .col img {
+    border-radius: 15px;
+    border-color: white;
+    margin: 10px;
+    max-width: 500px;
+    max-height: 500px;
+} */
+
+.row .lineone {
+    /* 在同一行内的块级元素 不仅能达到块状而且可以在同一行显示*/
+    display: inline-block;
+}
+
+.row .linetwo {
+    display: inline-block;
+}

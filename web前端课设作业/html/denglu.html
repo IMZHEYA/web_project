@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录界面</title>
+        <!-- 引入外部样式表和图标 -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="shortcut icon" href="../图标.ico">
+    <style>
+           /* 内部样式表 */
+        body {
+            background-color: white;
+        }
+        /* 外部盒子 */
+        .one {
+            width: 500px;
+            height: 600px;
+            margin-left: 400px;
+            margin-top: 50px;
+            float: left;
+        }
+        /* 内部盒子 */
+        .two {
+            width: 300px;
+            height: 400px;
+            background-color: rgb(228, 240, 252);
+            border-radius: 10px;
+            border: 1px solid pink;
+            margin: 0 auto;
+            margin-top: 150px;
+            /* 盒子阴影 */
+            box-shadow: 0 2px 2px 1px rgba(53, 37, 131, 0.3);
+        }
+           /* 请登录 */
+        .two h2 {
+            padding-top: 30px;
+            color: rgb(97, 87, 122);
+            padding-left: 103px;
+        }
+         /* 用户名和密码 */
+        .two label {
+            padding-left: 15px;
+            color: rgb(106, 101, 113);
+        }
+          /* 用户名框 */
+        .text1 {
+            margin-left: 15px;
+            border: 1px solid rgb(215, 215, 215);
+        }
+             /* 密码框 */
+        .text2 {
+            margin-left: 30px;
+            border: 1px solid rgb(215, 215, 215);
+        }
+        #mima{
+            position: relative;
+        }
+        /* 小眼睛 */
+        #mima img{
+              position:absolute;
+              top: 2px;
+              right: 2px;
+              width: 24px;
+        }
+       /* 用户名框和密码框鼠标悬浮时的样式 */
+        .two input:hover {
+            border: 1px solid rgb(250, 211, 140);
+
+        }
+    /* 登录按钮样式 */
+        .deng #button {
+            width: 100px;
+            height: 30px;
+            margin-left: 100px;
+            margin-top: 60px;
+            background-color: rgb(226, 215, 248);
+            border: 1px solid rgb(254, 247, 247);
+            color: rgb(106, 84, 126);
+        }
+     /* 登录按钮鼠标悬浮时的样式 */
+        .deng #button:hover {
+            background-color: rgb(216, 196, 228);
+            color: rgb(73, 73, 73);
+        }
+   /* 已同意平台服务协议部分 */
+        .oneone {
+            padding-top: 20px;
+            width: 260px;
+            height: 20px;
+            margin: 0 auto;
+        }
+        /* 登录旁边的图片 */
+        #wuliuqi {
+            margin-left: 50px;
+            width: 450px;
+            height: 600px;
+        }
+         /* 结尾部清除浮动 */
+         .footer {
+            clear: both;
+        }
+       /* 表单上面外边距 */
+        form {
+            margin-top: 50px;
+        }
+#draggable-image {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 510px; /* 距离顶部的距离 */
+    left: 50px; /* 距离左边的距离 */
+    z-index: 999; /* 设置一个较高的z-index值 */
+}
+    </style>
+</head>
+<img id="draggable-image" src="../images/奔跑小狗.gif" alt="可拖动的图片">
+<body>
+    <!-- 头部 -->
+    <div class="header">
+          <div id="banner">
+            <ul id="imgList">
+                <li><img src="../images/pink.png" alt=""></li>
+                <li><img src="../images/伍六七首页.jpg" alt=""></li>
+                <li><img src="../images/全员大图.jpg" alt=""></li>
+                <li><img src="../images/首页.jpg" alt=""></li>
+                <li><img src="../images/pink.png" alt=""></li>
+            </ul> 
+            <ul id="icolist">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+            <!-- 左右箭头 -->
+            <div class="prev">&lt;</div>
+            <div class="next">&gt;</div>
+
+        </div>
+    </div>
+    <!-- 导航栏 -->
+    <div class="nav">
+        <a href="./index.html">首页</a>
+        <a href="./haibao.html">海报</a>
+        <a href="./juese.html">角色</a>
+        <a href="./juzhao.html">剧照</a>
+        <a href="./shipin.html">视频</a>
+        <a href="./denglu.html">登录</a>
+    </div>
+    <!-- 登录部分 -->
+    <div class="one">
+        <div class="two">
+            <h2>Login</h2>
+            <form action="div.py" method="post" id="form" onsubmit="return form_action(event)">
+                <label>用户名:</label>
+                <input type="text" name="username" class="text1" placeholder="请输入用户名："><br><br>
+                <div id="mima">
+                <label>密码:</label>
+                <input type="password" name="password" class="text2" placeholder="请输入密码：">
+                <div id="eye"><img src="../images/eyesclose.png" alt=""></div>
+                </div>
+                <br><br>
+                <div class="deng">
+               <input  type="submit" id="button" value="登录" >
+                </div>
+            </form>
+        </div>
+        <div class="oneone">
+            <input type="checkbox" checked="checked" name="zhezi" id="zhezi">
+            已同意<a href="#">服务协议</a>和<a href="#">平台服务协议</a>
+        </div>
+    </div>
+    <img src="../images/登录伍六七.png" alt="" id="wuliuqi">
+    <!-- 结尾部分 -->
+    <div class="footer">
+        <nav>
+            <ul>
+                <li><a href="#">帮助中心 |</a></li>
+                <li><a href="#">&nbsp;联系我们 |</a></li>
+                <li><a href="#">&nbsp;关于我们 |</a></li>
+                <li><a href="#">&nbsp;隐私声明 |</a></li>
+                <li><a href="#">&nbsp;意见反馈</a></li>
+            </ul>
+        </nav>
+
+        <address>
+            <a href="http://www.ujn.cn">Copyright &copy;济南大学web前端团队</a>
+        </address>
+    </div>
+    <script>
+//登录表单验证   表单编程
+function form_action(event) {
+//获取表单对象
+var form = document.getElementById('form');
+var username = document.getElementsByName('username')[0].value;
+var password = document.getElementsByName('password')[0].value;
+var checkbox = document.getElementById('zhezi').checked;
+   if(username === "123" && password === "123" && checkbox){
+    form.action = "./dengluhou.html";
+   } 
+   else if(username !== "123"){
+    alert("用户名错误！");
+    event.preventDefault();//修改表单的默认提交行为
+   }
+   else if(password !== "123"){
+    alert("密码错误！");
+    event.preventDefault();//修改表单的默认提交行为
+   }
+   else if(!checkbox){
+    alert("请勾选同意协议！");
+    event.preventDefault();//修改表单的默认提交行为
+   }
+}
+//js实现密码框小眼睛 显示隐藏密码
+var eyeImg = document.getElementById('eye').getElementsByTagName('img')[0];
+var inputPassword = document.getElementsByName('password')[0];
+var passwordBoolean = true;
+eyeImg.addEventListener('click',function(){
+    if(passwordBoolean){
+    eyeImg.src = "../images/eyesopen.png";//修改路径
+    passwordBoolean = false;
+    inputPassword.type = 'text';//修改文本框属性
+    }else{
+         eyeImg.src = "../images/eyesclose.png";
+         passwordBoolean = true;
+         inputPassword.type = 'password';
+    }
+    
+})
+
+//轮播图
+var eprev = document.querySelector('.prev');
+var enext = document.querySelector('.next');
+var esico = document.getElementById('icolist').getElementsByTagName('li');
+var eicolist = document.querySelector('#icolist');//获取圆点列表元素
+var eimglist = document.querySelector('#imgList');//获取图片列表
+var left = 0;//移动变量
+var timer;//计时器
+run();
+//图片轮播
+function run() {
+    if (left <= -5688) {
+        left = 0;
+    }
+    var m = Math.floor(-left / 1422);
+    imgList.style.marginLeft = left + 'px';
+    // var n = (left % 1422 == 0) ? n =1200 : n = 10;
+    left -= 10;
+    timer = setTimeout(run, 50);
+    //圆点颜色变化
+    icochange(m);
+}
+//图片定位函数
+function imgchange(n) {
+    let lt = - (n * 1422);
+    imgList.style.marginLeft = lt + 'px';
+    left = lt;
+}
+//鼠标点击上一张事件
+eprev.onclick = function () {
+    let prevgo = Math.floor(-left / 1422) - 1;
+    if (prevgo == -1) {
+        prevgo = 3;
+    }
+    imgchange(prevgo);
+}
+//鼠标点击下一张事件
+enext.onclick = function () {
+    let nextgo = Math.floor(-left / 1422) + 1;
+    if (nextgo == 4) {
+        nextgo = 0;
+    }
+    imgchange(nextgo);
+}
+//  圆点跟随变化函数
+function icochange(m) {
+    for (let index = 0; index < esico.length; index++) {
+        esico[index].style.backgroundColor = '';
+    }
+    if (m < esico.length) {
+        esico[m].style.backgroundColor = 'red';
+    }
+}
+// 给名为eicolist的小圆点绑定一个点击事件处理函数
+eicolist.onclick = function () {
+    // 获取事件的目标元素
+    var tg = event.target;
+    // 将目标元素的innerHTML转换为数字，并减去1，得到图标的索引
+    let ico = tg.innerHTML - 1;
+    /// 如果得到的图标索引是一个数字
+    if (!isNaN(ico)) {
+        // 调用imgchange函数，传入图标索引，实现图标切换
+        imgchange(ico);
+        // 调用icochange函数，传入图标索引，改变图标样式
+        icochange(ico);
+    }
+
+}
+/* 鼠标在图片列表上时轮播停止，移开后又启动 */
+eimglist.onmouseover = function () {
+    clearTimeout(timer);
+}
+eimglist.onmouseout = function () {
+    run();
+}
+//阿七图片切换
+     var wuliuqi = document.getElementById('wuliuqi');
+     var currentImageIndex = 0;
+     var imageSources = [
+        "../images/登录伍六七.png",
+         "../images/阿7被打前.png",
+          "../images/阿7被打后.png"
+     ];
+     //为图片添加事件监听器 点击时会改变数组的索引
+     wuliuqi.addEventListener('click',function(){
+        currentImageIndex = (currentImageIndex + 1) % imageSources.length;
+        wuliuqi.src = imageSources[currentImageIndex];
+     })
+// JavaScript 部分
+// 拖动小狗图片
+var draggableImage = document.getElementById('draggable-image');
+//标记是否正在拖动图片
+var isDragging = false;
+var offsetX, offsetY;
+//鼠标按下事件
+draggableImage.addEventListener('mousedown', function (e) {
+    isDragging = true;
+    offsetX = e.clientX - draggableImage.getBoundingClientRect().left;
+    offsetY = e.clientY - draggableImage.getBoundingClientRect().top;
+
+    // 阻止默认行为，防止页面滚动
+    e.preventDefault();
+});
+//鼠标移动事件
+document.addEventListener('mousemove', function (e) {
+    if (isDragging) {
+        var x = e.clientX - offsetX;
+        var y = e.clientY - offsetY;
+        draggableImage.style.left = x + 'px';
+        draggableImage.style.top = y + 'px';
+    }
+});
+//鼠标释放事件
+document.addEventListener('mouseup', function () {
+    isDragging = false;
+});
+
+
+    </script>
+</body>
+</html>
